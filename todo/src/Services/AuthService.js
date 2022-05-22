@@ -7,7 +7,7 @@ class AuthService {
     AUTH_DATA = "Basic " + window.btoa("user:password");
 
     login = (u, p) => {
-        if(u === "tbg" && p === "aaa") {
+        if(u === "user" && p === "pwd") {
             sessionStorage.setItem("authUser", u);
             this.setupAxiosInterceptors();
         }
