@@ -7,7 +7,7 @@ const HeaderComponent = props =>  {
     return (
         <header>
             <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                <div className="navbar-brand"><a href="http://localhost:8080">Hallo.</a></div>
+                <div className="navbar-brand"><a href="#">Hallo.</a></div>
                 <ul className="navbar-nav">
                     {AuthService.isLoggedIn() && <li><Link className="nav-link" to="/welcome">Home</Link></li>}
                     {AuthService.isLoggedIn() && <li><Link className="nav-link" to="/todos">Todo List</Link></li>}
